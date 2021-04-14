@@ -1,7 +1,7 @@
 {
 	"name": "crud-ts",
 	"version": "1.0.0",
-	"description": "Build TODO's CRUD rest API with typescript + Express.js + Sequelize + Sqlite3 [ ] set up typscript for dev [ ] basic express server with typescript [ ] setup database [ ] create model [ ] create todo [ ] read todo with pagaination [ ] read todo with id [ ] update todo [ ] delete todo",
+	"description": "Build TODO's CRUD rest API with typescript + Express.js + Sequelize + Sqlite3",
 	"main": "index.js",
 	"scripts": {
 		"dev": "ts-node-dev --respawn src/server.ts",
