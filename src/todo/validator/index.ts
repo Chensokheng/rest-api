@@ -21,8 +21,7 @@ class TodoValidator {
 	checkReadTodo() {
 		return [
 			query('limit')
-				.notEmpty()
-				.withMessage('The query limit should be not empty')
+				.optional()
 				.isInt({ min: 1, max: 10 })
 				.withMessage('The limit value should be number and between 1-10'),
 			query('offset')
