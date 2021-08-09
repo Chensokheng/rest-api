@@ -84,9 +84,10 @@ describe("test read pagination  route", () => {
 	});
 
 	test("Should handle request query", async () => {
-		const res = await request(app).get("/api/v1/read");
+		const res = await request(app).get("/api/v1/read?limit=0");
 		expect(res.body).toEqual({
-			msg: "The query limit should be not empty",
+			value: "0",
+			msg: "The limit value should be number and between 1-10",
 			param: "limit",
 			location: "query",
 		});

@@ -16,8 +16,8 @@ class TodoController {
 
 	async readPagination(req: Request, res: Response) {
 		try {
-			const limit = req.query?.limit as number | undefined;
-			const offset = req.query?.offset as number | undefined;
+			const limit = (req.query.limit as number | undefined) || 10;
+			const offset = req.query.offset as number | undefined;
 
 			const records = await TodoInstance.findAll({ where: {}, limit, offset });
 			return res.json(records);
