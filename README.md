@@ -4,21 +4,29 @@ Improve performance by using express-validator
 
 ## Video
 
-[![thumb nail video](https://i9.ytimg.com/vi/yFgrSJGNj0E/mqdefault.jpg?raw=true)](https://youtu.be/yFgrSJGNj0E)
+## Part 1. [ Build a bullet proof REST API with Typescript, Express.js and Sequelize with Sqlite3 |CRUD REST API ](https://www.youtube.com/watch?v=yFgrSJGNj0E&list=PLYHXTr4kGJjEGnww4pGca4QY7aKBZ6L-I)
 
-## Installation
+## Part 2. [ Build a bullet proof REST API with Typescript, Express.js and Sequelize with Sqlite3 |CRUD REST API ](https://www.youtube.com/watch?v=u5zZ_P2wjiA&list=PLYHXTr4kGJjEGnww4pGca4QY7aKBZ6L-I&index=2)
 
-```
-yarn install
-```
-
-## Run locally
+## For development
 
 ```
-yarn run dev
+make dev
 ```
 
-## Run test
+## For production
+
+```
+make prod
+```
+
+# Run test
+
+```
+make tests
+```
+
+or
 
 ```
 yarn run test

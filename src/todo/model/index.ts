@@ -1,5 +1,5 @@
-import { DataTypes, Model } from 'sequelize';
-import db from '../../config/database.config';
+import { DataTypes, Model } from "sequelize";
+import db from "../../config/database.config";
 
 interface TodoAttributes {
 	id: string;
@@ -12,7 +12,7 @@ export class TodoInstance extends Model<TodoAttributes> {}
 TodoInstance.init(
 	{
 		id: {
-			type: DataTypes.UUIDV4,
+			type: DataTypes.UUID,
 			primaryKey: true,
 			allowNull: false,
 		},
@@ -28,6 +28,6 @@ TodoInstance.init(
 	},
 	{
 		sequelize: db,
-		tableName: 'todos',
+		tableName: "todos",
 	}
 );
